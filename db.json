@@ -1,0 +1,34 @@
+{
+  "persons": [
+    {
+      "name": "Ada Lovelace",
+      "number": "050 493 5839",
+      "id": 1
+    },
+    {
+      "name": "Mary Poppendieck",
+      "number": "050 493 6849",
+      "id": 3
+    },
+    {
+      "name": "Arto Hellas",
+      "number": "044 593 5964",
+      "id": 10
+    },
+    {
+      "name": "Luka Kisuli-Chan",
+      "number": "040 567 2345",
+      "id": 11
+    },
+    {
+      "name": "Kameli Lopeta-Triggeröinti",
+      "number": "044 385 5939",
+      "id": 12
+    },
+    {
+      "name": "tt",
+      "number": "33",
+      "id": 13
+    }
+  ]
+}
