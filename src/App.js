@@ -56,7 +56,7 @@ const App = () => {
   const [newNumber, setNewNumber] = useState("");
   const [filter, setFilter] = useState("");
   const [message, setMessage] = useState(null);
-  const [isPositive, setIsPositive] = useState(false);
+  const [isPositive, setIsPositive] = useState(true);
 
   useEffect(() => {
     personService.getAll().then((initialPersons) => {
