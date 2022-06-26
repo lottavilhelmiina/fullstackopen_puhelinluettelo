@@ -81,15 +81,23 @@ const App = () => {
         }
       });
     } else {
-      personService.create(nameObject).then((returnedPerson) => {
-        setPersons(persons.concat(returnedPerson));
-        setMessage(`Added ${returnedPerson.name}`);
-        setTimeout(() => {
-          setMessage(null);
-        }, 5000);
-        setNewName("");
-        setNewNumber("");
-      });
+      personService.
+        create(nameObject).
+        then((returnedPerson) => {
+          setPersons(persons.concat(returnedPerson));
+          setMessage(`Added ${returnedPerson.name}`);
+          setTimeout(() => {
+            setMessage(null);
+          }, 5000);
+          setNewName("");
+          setNewNumber("");
+        }).catch((error) => {
+          setMessage('Failed to add person');
+          setIsPositive(false);
+          setTimeout(() => {
+            setMessage(null);
+          }, 5000);
+        });
     }
   };
 
@@ -145,7 +153,6 @@ const App = () => {
           setTimeout(() => {
             setMessage(null);
           }, 5000);
-          setIsPositive(true);
         });
       setNewName("");
       setNewNumber("");
